@@ -1,0 +1,7 @@
+body>.banner{
+    width: 100%;
+    min-width: 1181px;
+    height: 420px;
+    background-image: url("../img/banner/nhh.jpg");
+    background-position: center;
+}

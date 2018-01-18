@@ -1,0 +1,8 @@
+body>.banner{
+    background-image: url("../img/banner/hyxhn.jpg");
+    width: 100%;
+    min-width: 1181px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+}

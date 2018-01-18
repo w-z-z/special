@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet " type="text/css" href="css/login.css">
+    <link rel="stylesheet " type="text/css" href="css/public.css">
+</head>
+<body>
+<div class="login">
+    <div class="login_content">
+    <div>
+        <img  class="login_img" src="img/logo+text.png">
+    </div>
+    <div class="login__name">
+        <p style="font-family:SourceHanSansCN-Bold;font-size: 30px">巧克力盒娱乐</p>
+        <p style="font-family:SourceHanSansCN-Regular;font-size: 30px">IP赋能服务云平台</p>
+    </div>
+    <div class="login_text">
+        <div class="login_note"></div>
+        <div style="height: 37px">
+        <form id="loginform" name="loginform" autocomplete="on" method="post">
+        <input  style="float: left"  name="email" id="email"  placeholder="用户名"/>
+        <input  style="float: right" type="password" id="password" placeholder="密码"/>
+         </form>
+        </div>
+        <div class="login_forget">
+            <span style="float: left"><input  style="padding: 0" id="isRemberPwdId" type="checkbox"/>自动登录</span>
+            <span style="float: right"><a href="#" style="color: #4381E6">忘记密码</a></span>
+        </div>
+        <button class="tologin" onclick="login()">登陆</button>
+    </div>
+    </div>
+</div>
+<script src="./lib/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+<script>
+    //获取当前屏幕高度
+    var crruntheight=$(window).height()
+    var crruntwidth=$(window).width()
+    $(".login").css("height",crruntheight)
+    $(".login").css("width",crruntwidth)
+    $(".login_content").css("top",crruntheight/2-260+"px")
+    $(".login_content").css("left",crruntwidth/2-250+"px")
+    /*窗口变化的时候*/
+    window.onresize=function(){
+        var crruntheight1=$(window).height()
+        var crruntwidth1=$(window).width()
+        $(".login").css("height",crruntheight1)
+        $(".login").css("width",crruntwidth1)
+        $(".login_content").css("top",crruntheight1/2-260+"px")
+        $(".login_content").css("left",crruntwidth1/2-250+"px")
+    }
+
+</script>
+</body>
+</html>

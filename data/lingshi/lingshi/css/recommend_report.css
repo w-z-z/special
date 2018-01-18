@@ -1,0 +1,243 @@
+.banner{
+    width: 100%;
+    min-width: 1181px;
+    height: 420px;
+    background-image: url("../img/banner_01.jpg");
+    background-position: center;
+}
+.report_title{
+    width: 1181px;
+    height: 101px;
+    background-color:#4381E6;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    font-family: SourceHanSansCN-Bold;
+    line-height: 101px;
+}
+.report_content_detail{
+    width: 1181px;
+    background-color: rgba(153, 180, 255, 0.44);
+    border-top: 1px solid #DADADA;
+    border-bottom:1px solid #DADADA;
+}
+.suit_trait{
+    width: 1181px;
+}
+.suit_trait:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.suit_trait>div{
+    float: left;
+    color: white;
+    width: 181px;
+    height: 43px;
+    font-size: 18px;
+    font-family:SourceHanSansCN-Bold ;
+    background-color:#4381E6 ;
+    line-height: 43px;
+    text-align: center;
+    margin: 10px 8px 0 7px;
+}
+.recommend_ip{
+    width: 1181px;
+    margin-bottom: 150px;
+}
+
+.recommend_ip_detail{
+    padding-top: 20px;
+    border-top: 1px solid #DADADA;
+    width: 1181px;
+     height: 300px;
+    margin-top: 30px;
+}
+
+.recommend_ip_detail_list{
+    width: 1181px;
+    height: 275px;
+    margin-top: 30px;
+}
+.recommend_ip:after{
+    content: "";
+    display: block;
+    clear:  both;
+}
+
+.list_content_img{
+    width: 361px;
+    height: 275px;
+    position: relative;
+    margin: 0;
+    float: left;
+}
+
+.list_content_img>img{
+    width: 100%;
+    height: 100%;
+}
+
+.list_content_img>div{
+    width: 361px;
+    height:49px ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/report01.jpg");
+    background-size: 100%  100%;
+
+}
+.list_content_img>div{
+   content: "";
+    display: block;
+    clear: both;
+}
+.list_content_img>div>.ip_name_1{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 49px;
+    height: 49px;
+    color: white;
+    font-family: SourceHanSansCN-Bold;
+    padding-left: 10px;
+    float: left;
+
+}
+.list_content_img>div>.ip_name_3{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 65px;
+    height: 49px;
+    color: white;
+    font-family: SourceHanSansCN-Bold;
+    float: right;
+    display: table-cell;
+    vertical-align: bottom;
+
+}
+.list_content_img>div>.ip_name_2{
+    display: inline-block;
+    font-size: 36px;
+    line-height: 49px;
+    height: 49px;
+    color: white;
+    font-family: impact;
+    float: right;
+    padding-right: 10px;
+    padding-left: 3px;
+
+}
+/*每一个推荐IP的详细div*/
+.list_content_info{
+    float: left;
+    width: 781px;
+    height: 275px;
+   background-color: #F4F4F4;
+    padding: 0px 0px 10px 20px ;
+    margin-left: 20px;
+}
+.list_content_info_detail{
+    height:255px;
+    width: 601px;
+    float: left;
+}
+.list_content_info_detail_title{
+    font-size: 14px;
+    color: #3D74CF;
+    margin: 10px 0 0 0 ;
+}
+.list_content_info_detail_title>span{
+    font-size: 10px;
+}
+.recommend_ip_basic_information{
+    width: 601px;
+    background-color: white;
+}
+.recommend_ip_basic_information:after{
+   content: "";
+    display: block;
+    clear: both;
+}
+.recommend_ip_basic_information>div{
+     float: left;
+      width: 175px;
+     margin:3px 5px ;
+}
+.recommend_ip_basic_information>div>h6{
+    color: #333333;
+    font-size: 12px;
+    margin: 6px 0;
+}
+.recommend_ip_basic_information>div>p{
+    color:#808080;
+    font-size: 12px;
+
+}
+
+.recommend_ip_news{
+    width: 601px;
+    background-color: white;
+}
+.recommend_ip_news:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.recommend_ip_news>div{
+    float: left;
+    color:#808080 ;
+    font-size: 12px;
+    width: 50%;
+    padding: 2px ;
+}
+
+.recommend_ip_label{
+    width: 601px;
+}
+.recommend_ip_label:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.recommend_ip_label>div{
+   float: left;
+    padding: 2px 15px;
+    background-color:#3D74CF ;
+    color: white;
+    margin: 0 5px;
+}
+.list_content_info_button{
+    height: 221px;
+    width: 119px;
+    float: left;
+    background-color: #33CDE5;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family:SourceHanSansCN-Bold  ;
+    margin: 29px 20px ;
+    transition: all 0.3s;
+}
+.list_content_info_button a{
+    display:block;
+    height: 100%;
+    padding:85px 10px;
+    color: #fff;
+    text-align: center; 
+
+}
+.list_content_info_button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #555555;
+
+
+}
+.list_content_info_button>a{
+    text-decoration: none;
+    color: white;
+}
+.list_content_info_button>a:hover{
+    text-decoration: none;
+    color: white;
+}

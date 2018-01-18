@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>推荐系统</title>
+    <!-- 4. 强制IE浏览使用最新的版本来渲染网页-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <!--  5. 移动设备做优先  ，比如网页大小， 是否允许缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet " type="text/css" href="css/nav&footer.css">
+    <link rel="stylesheet " type="text/css" href="css/recommend.css">
+    <link rel="stylesheet " type="text/css" href="css/public.css">
+    <!-- 引入 Bootstrap -->
+    <link href="./lib/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- 6. 针对IE 9 以下版本对HTML5的兼容性问题。-->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body >
+<span class="pagename"  data-pagename="recommend"></span>
+<div id="nav"></div>
+<div class="banner">
+    <div class="banner_text">
+        <p>
+            IP角色形象势能匹配系统
+        </p>
+        <p>IP角色形象势能匹配系统，是巧克力盒娱乐IaaS（IP-as-a-Service）平台提供给各类商业品牌、消费品企业的一款功能性匹配工具。它可根据各类IP赋能需求，在云端通过IP势能智能分析、自动匹配等环节，为您提供营销、媒介、产品等多维度的IP赋能解决方案。</p>
+    </div>
+</div>
+<div class="content">
+    <div class="flow">
+    <div>①  市场需求</div>
+    <div>②  用户特征</div>
+    <div>③  生成报告</div>
+    <div>④  媒介图库采购</div>
+</div>
+    <div class="custom">
+     <span>
+         自定义您的需求
+     </span>
+ </div>
+    <div class="custom_demand">
+    <div class="custom_note">
+        ▌选择您主要的市场需求（必选）：
+    </div>
+        <div class="custom_demand_category">
+            <div class="category_content">
+               <div class="  category_content_all category_content_name"> ▶  品牌曝光</div>
+                <div class="  category_content_detail">● 希望通过与IP角色形象的合作，带动品牌的曝光度与品牌影响力</div>
+            </div>
+            <div class="category_content">
+                <div class=" category_content_all category_content_name">▶  产品销售</div>
+                <div  class="category_content_detail">● 希望通过与IP角色形象的合作，直接带动产品销量的提升</div>
+            </div>
+            <div class=" category_content">
+               <div class=" category_content_all category_content_name"> ▶  流量注入</div>
+                <div  class="category_content_detail">● 希望通过与IP角色形象的合作，IP的社会化媒体及社群粉丝，能为品牌进行导流</div>
+            </div>
+            <div class="category_content">
+                <div class=" category_content_all category_content_name">▶  调性提升</div>
+                <div  class="category_content_detail">● 希望通过与IP角色形象的合作，从内容营销维度为品牌输出更多品牌价值观</div>
+            </div>
+        </div>
+    </div>
+    <div class="user_trait">
+        <div class="custom_note">
+            ▌选择您品牌目标用户特征（可选）：
+        </div>
+        <div  class="user_trait__detail" >
+            <div >
+                <span>● 主要的目标用户性别定位：</span>
+                <div class="chunk_choose">男</div>
+                <div class="chunk_choose">女</div>
+            </div>
+            <div>
+                <span>● 主要的目标用户年龄定位：</span>
+                <div class="chunk_choose">婴幼儿</div>
+                <div class="chunk_choose">少年</div>
+                <div class="chunk_choose">成年</div>
+                <div class="chunk_choose">中老年</div>
+            </div>
+            <div>
+                <span>● 主要的目标用户地域分布：</span>
+                <div class="chunk_choose">一线城市</div>
+                <div class="chunk_choose">二三线城市</div>
+                <div class="chunk_choose">四线城市及以下</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="submit_info">
+    <h4><i><i></i></i></h4>
+    <button class="to_submit" onclick="to_report()">生成IP推荐报告</button>
+</div>
+<div id="footer"></div>
+<!-- 2. 引入jQuery库： -->
+<script src="./lib/jquery-1.11.3.js"></script>
+<!-- 3. 引入 bootstrap 的js文件：-->
+<script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+<script src="js/nav&footer.js"></script>
+<script type="text/javascript">
+    function to_report() {
+        window.location.href="recommend_report.html"
+    }
+    /*hover效果*/
+
+    /*点击效果*/
+    var category_content=$(".category_content");
+    for (var i = 0; i < category_content.length; i++) {
+        (function(i) {
+            var temp=true;
+            category_content[i].onclick = function() {
+                if(temp){
+                    $(category_content[i]).addClass("shadow")
+                    $(category_content[i]).children(".category_content_all").addClass("active")
+                    temp = false
+                }else{
+                    $(category_content[i]).removeClass("shadow")
+                    $(category_content[i]).children(".category_content_all").removeClass("active")
+                    temp = true
+                }
+            }
+        })(i)
+    }
+
+    $(".chunk_choose").click(function(){
+        $(this).parent().find(".chunk_choose").removeClass("chunk_choose_active");
+        $(this).addClass("chunk_choose_active");
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/*内容*/
+.banner{
+    width: 100%;
+    min-width: 1181px;
+    height: 420px;
+    background-image: url("../img/banner_01.jpg");
+    background-position: center;
+}
+.flow{
+    width: 1181px;
+    height: 101px;
+    background-color: #3D74CF;
+}
+.flow>div{
+    height: 101px;
+    text-align: center;
+    float: left;
+    width: 295px;
+    color: white;
+    line-height: 101px;
+    font-size: 24px;
+}
+.flow>div{
+    background-color: #4381E6;
+}
+.flow>div+div{
+    background-color: #3D74CF;
+}
+.flow>div+div+div{
+    background-color: #4381E6;
+}
+.flow>div+div+div+div{
+    background-color: #3D74CF;
+}
+.custom{
+    width: 1181px;
+    height: 150px;
+    border-bottom: 2px solid #DADADA;
+    text-align: center;
+    line-height: 300px;
+    font-size: 24px;
+    color: #3D74CF;
+}
+
+.custom>span{
+    background-color: white;
+}
+.custom_demand{
+    width: 1181px;
+    margin-top: 20px;
+    padding: 20px  0 ;
+    margin-bottom: 60px;
+}
+.custom_demand_category{
+    width: 1181px;
+}
+.custom_demand:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.category_content{
+    width: 285px;
+    float:left ;
+    margin: 0 5px;
+    transition: all 0.3s;
+    border: 1px solid #DADADA;
+}
+.category_content:hover{
+    cursor: pointer;
+    border: 1px solid #3D74CF;
+    -moz-box-shadow:0px 0px 15px #969696;/*firefox*/
+    -webkit-box-shadow:0px 0px 15px #969696;/*webkit*/
+    box-shadow:0px 0px 15px #969696;/*opera或ie9*/
+}
+.category_content_all{
+    width: 283px;
+    height:65px ;
+    text-align: center;
+    line-height: 65px;
+    background-color: #DADADA;
+    color: #333333;
+    border: 1px solid #DADADA;
+}
+.shadow{
+    border: 1px solid  #3D74CF;
+    -moz-box-shadow:0px 0px 15px #969696;/*firefox*/
+    -webkit-box-shadow:0px 0px 15px #969696;/*webkit*/
+    box-shadow:0px 0px 15px #969696;/*opera或ie9*/
+}
+.custom_demand_category>.shadow:hover>.active{
+    border: 1px solid  #3D74CF;
+    background-color: #3D74CF;
+    color: white;
+}
+.active{
+    border: 1px solid  #3D74CF;
+    background-color: #3D74CF;
+    color: white;
+}
+.category_content:hover .category_content_name{
+    background-color: white;
+    color:  #3D74CF;
+    border-bottom: 1px solid #3D74CF;
+}
+.category_content_detail{
+    width: 285px;
+    height: 175px;
+    text-align: left;
+    color: #808080;
+    padding: 50px 50px ;
+}
+.user_trait{
+    width: 1181px;
+    padding: 30px 0 ;
+    border-top: 2px solid #DADADA;
+}
+
+.user_trait__detail{
+    width: 1181px;
+
+}
+.user_trait__detail>div{
+    width: 1181px;
+    padding: 10px 0  ;
+    color: #808080;
+}
+.user_trait__detail>div>span{
+   padding: 3px 5px;
+}
+.chunk_choose{
+    display: inline-block;
+    padding: 3px 5px;
+    background-color:#DADADA;
+    min-width: 121px;
+    text-align: center;
+    border: 1px solid #DADADA;
+    margin: 0 6px;
+}
+.chunk_choose:hover{
+   cursor: pointer;
+}
+.chunk_choose_active{
+    background-color:#3D74CF;
+    color: white ;
+}
+.user_trait__detail .chunk_choose_active:hover{
+    background-color:#3D74CF;
+    color: white ;
+}
+.chunk_choose:hover{
+    background-color:white;
+    color: #3D74CF ;
+    border: 1px solid #3D74CF;
+}
+.submit_info{
+    width: 100%;
+    min-width: 1181px;
+    height: 253px;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+.submit_info h4{
+    color: #3D74CF;
+}
+.submit_info>h4>i{
+    border: 17px solid transparent;
+    border-top: 17px solid white;
+    display: inline-block;
+    height: 17px;
+    position: relative;
+}
+.submit_info>h4>i>i{
+    border: 10px solid transparent;
+    border-top: 10px solid #3D74CF;
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    top: -17px;
+    right: -10px;
+}
+.submit_info>button{
+    width: 261px;
+    height: 61px;
+    background-color: #33CDE5;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-family: SourceHanSansCN-Bold;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+.submit_info>button:hover{
+    -moz-box-shadow:0px 0px 10px #969696;/*firefox*/
+    -webkit-box-shadow:0px 0px 10px #969696;/*webkit*/
+    box-shadow:0px 0px 10px #969696;/*opera或ie9*/
+}

@@ -1,0 +1,113 @@
+body{
+    background-color: #151f32;
+
+}
+input{
+    outline:none
+}
+.login{
+    min-width: 600px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("../img/login01.png");
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+
+}
+.login_content{
+    position: absolute;
+}
+.login_img{
+    width:291px ;
+    height: 58px;
+    margin: 0 auto;
+}
+.login__name{
+    color: white  ;
+    padding: 20px 0 10px 0  ;
+    text-align: center;
+}
+.login_text{
+    width: 501px;
+    height: 150px;
+    margin: 0 auto;
+}
+.login_note{
+    width: 501px;
+    color: #FF6637;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+    height: 34px;
+}
+#loginform>input{
+    width: 232px;
+    height: 37px;
+    padding-left: 12px;
+    line-height: 37px;
+    vertical-align: top;
+}
+::-webkit-input-placeholder {
+    font-family: SourceHanSansCN-Bold;
+    color: #B3B3B3;
+    font-size: 16px;
+    line-height: 37px;
+}
+::-moz-placeholder {/* Firefox 18- */
+    font-family: SourceHanSansCN-Bold;
+    color: #B3B3B3;
+    font-size: 16px;
+    line-height: 37px;
+}
+
+::-moz-placeholder{/* Firefox 19+ */
+
+    font-family: SourceHanSansCN-Bold;
+    color: #B3B3B3;
+    font-size: 16px;
+    line-height: 37px;
+}
+
+:-ms-input-placeholder {
+    font-family: SourceHanSansCN-Bold;
+    color: #B3B3B3;
+    font-size: 16px;
+    line-height: 37px;
+}
+.login_forget{
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 10px 0;
+}
+.login_forget:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.tologin{
+    width:501px;
+    height: 51px;
+    background-color: #4381E6;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+.tologin:hover{
+  cursor: pointer;
+}
+.tologin>a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.tologin>a:hover{
+    text-decoration: none;
+    color: white;
+
+}
